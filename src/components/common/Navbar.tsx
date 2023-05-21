@@ -25,7 +25,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <div className="sticky w-full flex flex-col md:flex-row items-center py-2 justify-between">
+    <div className="sticky top-0 bg-light z-50 w-full flex flex-col md:flex-row items-center py-2 justify-between">
       <Logo />
       <div>
         <ul className="flex items-center justify-center">
