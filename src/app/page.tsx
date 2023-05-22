@@ -4,6 +4,8 @@ import HomeImage from "@/components/home/HomeImage";
 import { CodeIcon, MathIcon, ReactIcon, TSIcon } from "@/icons/homepageSVGs";
 import SectionTitle from "@/components/common/SectionTitle";
 import RecentProjects from "@/components/home/RecentProjects";
+import Link from "next/link";
+import RecentPosts from "@/components/home/RecentPosts";
 
 export default function Home() {
   return (
@@ -53,6 +55,20 @@ export default function Home() {
       <section className="min-h-screen">
         <SectionTitle title="Recent Projects" />
         <RecentProjects />
+        <p className="py-3 text-lg">
+          To see all my projects head to the{" "}
+          <Link
+            href="/projects"
+            className="font-semibold underline underline-offset-2"
+          >
+            Projects Page
+          </Link>
+        </p>
+      </section>
+      {/* post section */}
+      <section className="min-h-screen">
+        <SectionTitle title="Recent Posts" />
+        <RecentPosts />
       </section>
     </main>
   );

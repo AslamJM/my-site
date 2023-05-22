@@ -18,8 +18,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
     <div
       className={`p-6 border-[.5px] border-dark rounded-md relative ${className}`}
     >
-      <div className="absolute w-[80px] h-[80px] bg-transparent rounded-tr-md border-dark border-t-4 border-r-4 -top-1 -right-1" />
-      <div className="absolute w-[80px] h-[80px] bg-transparent rounded-bl-md border-dark border-b-4 border-l-4 -left-1 -bottom-1" />
+      <div className="absolute w-[80px] h-[80px] bg-transparent rounded-tr-md border-dark border-t-4 border-r-4 -top-1 -right-1 -z-10" />
+      <div className="absolute w-[80px] h-[80px] bg-transparent rounded-bl-md border-dark border-b-4 border-l-4 -left-1 -bottom-1 -z-10" />
       <div className="h-[150px] bg-dark/50 rounded-md w-full"></div>
       <h3 className="my-2 font-semibold text-xl">{title}</h3>
       <p className="text-md">{exerpt}</p>
