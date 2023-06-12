@@ -21,11 +21,11 @@ const ProjectCard: FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`p-6 border-[.5px] border-dark rounded-md relative ${className}`}
+      className={`p-6 border-[.5px] border-dark rounded-md relative bg-white shadow-sm ${className}`}
     >
       <div className="absolute w-[80px] h-[80px] bg-transparent rounded-tr-md border-dark border-t-4 border-r-4 -top-1 -right-1 -z-10" />
       <div className="absolute w-[80px] h-[80px] bg-transparent rounded-bl-md border-dark border-b-4 border-l-4 -left-1 -bottom-1 -z-10" />
-      <div className="h-[150px] bg-dark/50 rounded-md w-full relative">
+      <div className="aspect-video  rounded-md w-full relative">
         <Image
           src={`/${image}`}
           alt={title}

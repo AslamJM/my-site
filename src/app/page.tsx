@@ -9,9 +9,9 @@ import RecentPosts from "@/components/home/RecentPosts";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <div className="flex min-h-screen flex-col items-center md:flex-row">
-        <div className="w-full md:w-1/2">
+    <main>
+      <div className="flex sm:min-h-screen flex-col items-center md:flex-row">
+        <div className="w-full md:w-1/2 py-6 sm:py-0">
           <h4 className="font-semibold text-2xl 2xl:text-4xl mb-4">
             Welcome....
           </h4>
@@ -22,7 +22,7 @@ export default function Home() {
           </p>
           <div className="mt-6">
             <h3 className="font-semibold text-lg 2xl:text-2xl">Follow On:</h3>
-            <div className="mt-2 flex items-center">
+            <div className="mt-2 flex items-center py-6 sm:py-0">
               {socialIcons.map((icon) => {
                 const { url, Icon } = icon;
                 return (

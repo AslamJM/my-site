@@ -1,10 +1,19 @@
 ---
-title: Auth with nodeJS
-exerpt: The auth system from the ground up using nodejs and JWT tokens.
+title: Auth with TRPC Express
+exerpt: The auth system from the ground up using nodejs trpc express and JWT tokens.
 image: images/projects/auth.jpg
-github: https://github.com/AslamJM/node-auth
+github: https://github.com/AslamJM/fullstack-trpc-project/tree/main/server
 ---
 
-### Authentication with nodeJS
+## Authentication with trpc Express
 
 For years I've been thinking authentication of an application is a very complicated task. But when i looked into it it became simple and very much understandable to an average programmer. I try to explain how i achieved this authentication flow. Nowadays people go for thirparty libraries and services for the auth solution but building this helped me to grasp some important concepts behind the scenes.
+
+### Technology Stack
+
+- **trpc express: ** for the server handling the routing and end to end type safety.
+- **mongodb: ** as the database for saving users.
+- **redis: ** for storing and retrieving the JWT tokens.
+- **docker: ** for spin up the database and app servers.
+
+The code is pretty much self explanatory. You can check source code in [here](https://github.com/AslamJM/fullstack-trpc-project/tree/main/server)
